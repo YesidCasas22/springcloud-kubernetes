@@ -1,0 +1,22 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: msvc-users
+  datasource:
+    url: jdbc:postgresql://localhost:5432/msvc-users
+    username: postgres
+    password: YEca4941*%
+  jpa:
+    database-platform: postgres
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
